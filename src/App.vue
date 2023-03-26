@@ -35,6 +35,7 @@
         <span class="mr-2">Latest Release</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
+      <HomeView />
     </v-app-bar>
 
     <v-main>
@@ -44,10 +45,13 @@
 </template>
 
 <script>
+import HomeView from './views/HomeView.vue'
 
 export default {
   name: 'App',
-
+  components: {
+    HomeView
+  },
   data: () => ({
     //
   }),

@@ -1,5 +1,8 @@
 <template>
   <v-container>
+    <div v-for="(item, index) in items">
+      <div>{{ index }}: {{ item }}</div>
+     </div>
     <v-row class="text-center">
       <v-col cols="12">
         <v-img
@@ -147,5 +150,11 @@
         },
       ],
     }),
+    props: {
+      items: {
+        type: Array,
+        //default: []
+      }
+    }
   }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <hello-world />
+  <HelloWorld :items="list" />
 </template>
 
 <script>
@@ -10,5 +10,8 @@
     components: {
       HelloWorld,
     },
+    data: () => ({
+      list: []
+    })
   }
 </script>
